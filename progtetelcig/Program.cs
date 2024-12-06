@@ -26,14 +26,17 @@ namespace progtetelcig
 
             for (i = 0; i < n; i++)
             {
-                Console.WriteLine(kimenet[i]+" ");
+                if (kimenet[i] > 0)
+                {
+                    Console.WriteLine(kimenet[i] + " ");
+                }
             }
 
 
 
 
 
-
+            Console.ReadKey();
             //2.Maximum
         }
     }

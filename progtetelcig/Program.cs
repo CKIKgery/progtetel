@@ -9,8 +9,8 @@ namespace progtetelcig
         static void Main(string[] args)
         {
             int[] x = { 1, 2, -5, 12, 5, 3, };
+			
             //1. Párosak kivalogatasa
-
             int n = x.Length;
             int i;
             int[] kimenet = new int[100];
@@ -32,12 +32,17 @@ namespace progtetelcig
                 }
             }
 
-
-
-
-
             Console.ReadKey();
+			
             //2.Maximum
+			int max = x[0];
+            for (int b = 1; b < x.Length; b++) 
+            {
+                if (x[b] > max)
+                {
+                    max = x[b];
+                }
+            }
         }
     }
 }
